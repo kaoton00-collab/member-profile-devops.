@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ข้อมูลส่วนตัว — คนที่ 3</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+      min-height: 100vh;
+      line-height: 1.6;
+    }
+
+    /* แถบเมนู */
+    nav {
+      background: linear-gradient(90deg, #2c3e50, #34495e);
+      padding: 15px 25px;
+      border-radius: 12px;
+      margin-bottom: 30px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    nav a {
+      color: white;
+      margin-right: 0;
+      text-decoration: none;
+      font-weight: 500;
+      padding: 8px 14px;
+      border-radius: 6px;
+      transition: all 0.3s ease;
+    }
+
+    nav a:hover {
+      background: rgba(255,255,255,0.2);
+      text-decoration: none;
+      transform: translateY(-2px);
+    }
+
+    /* ส่วนข้อมูลโปรไฟล์ */
+    .profile {
+      display: flex;
+      gap: 30px;
+      align-items: center;
+      margin-bottom: 35px;
+      background: white;
+      padding: 30px;
+      border-radius: 16px;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+      flex-wrap: wrap;
+    }
+
+    .profile img {
+      width: 170px;
+      height: 170px;
+      border-radius: 14px;
+      object-fit: cover;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.12);
+      transition: transform 0.3s ease;
+    }
+
+    .profile img:hover {
+      transform: scale(1.05);
+    }
+
+    .profile h2 {
+      color: #2c3e50;
+      margin-bottom: 12px;
+      font-size: 1.6rem;
+    }
+
+    .profile p {
+      margin: 6px 0;
+      color: #555;
+      font-size: 1.05rem;
+    }
+
+    .profile strong {
+      color: #2c3e50;
+    }
+
+    /* หัวข้อ */
+    h3 {
+      color: #2c3e50;
+      margin-bottom: 18px;
+      font-size: 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    /* ตาราง */
+    table {
+      width: 100%;
+      border-collapse: separate;
+      border-spacing: 0;
+      margin-top: 15px;
+      background: white;
+      border-radius: 14px;
+      overflow: hidden;
+      box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    }
+
+    th, td {
+      border: 1px solid #e9ecef;
+      padding: 14px 10px;
+      text-align: center;
+      transition: background 0.2s ease;
+    }
+
+    th {
+      background: linear-gradient(180deg, #4a6fa5, #3a5a8a);
+      color: white;
+      font-weight: 600;
+    }
+
+    tr:nth-child(even) td {
+      background: #f8f9fa;
+    }
+
+    tr:hover td {
+      background: #eef4fb;
+    }
+
+    /* รองรับหน้าจอเล็ก */
+    @media (max-width: 768px) {
+      .profile {
+        justify-content: center;
+        text-align: center;
+      }
+      table {
+        font-size: 0.9rem;
+      }
+      th, td {
+        padding: 10px 5px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- แถบเมนูเชื่อมโยง -->
+  <nav>
+    <a href="index.html">🏠 หน้าหลัก</a>
+    <a href="person1.html">เพื่อนคนที่ 1</a>
+    <a href="person2.html">เพื่อนคนที่ 2</a>
+    <a href="person3.html">ผม/ฉัน</a>
+  </nav>
+
+  <!-- ข้อมูลส่วนตัว -->
+  <div class="profile">
+    <img src="images/person1.jpg" alt="รูปโปรไฟล์">
+    <div>
+      <h2>ชื่อ-นามสกุล: พลังโชค เคียงอมร</h2>
+      <p><strong>ชื่อเล่น:</strong> เก่ง</p>
+      <p><strong>รหัสนักศึกษา:</strong> 67219010057</p>
+      <p><strong>ชั้นปี:</strong> ปี 3</p>
+    </div>
+  </div>
+
+  <!-- ตารางความชอบ -->
+  <h3>✨ สิ่งที่ชอบ</h3>
+  <table>
+    <tr>
+      <th>เพลงที่ชอบ</th>
+      <td>เพลงที่ 1.เพลงกลัวว่าจะไม่เสียใจ</td>
+      <td>เพลงที่ 2.เพลงฟาวเวอร์</td>
+      <td>เพลงที่ 3.เพลงหมอก</td>
+      <td>เพลงที่ 4.เพลงไม่รักดีกว่า</td>
+      <td>เพลงที่ 5.เพลงมลพิษ</td>
+    </tr>
+    <tr>
+      <th>การ์ตูนที่ชอบ</th>
+      <td>เรื่องที่ 1.โดเลม่อน </td>
+      <td>เรื่องที่ 2.ชินจัง</td>
+      <td>เรื่องที่ 3.นารูโต๊ะ</td>
+      <td>เรื่องที่ 4.สูตรลับตำรับดันเจียน</td>
+      <td>เรื่องที่ 5.Berserk</td>
+    </tr>
+  </table>
+
+</body>
+</html>
